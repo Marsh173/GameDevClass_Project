@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Class001-002/Assignment1_Town_Recreation.unity
-    guid: 0debfce11e3ab824ab332948670a1456
+    path: Assets/Scenes/Assignment_002_2D_Exploration/Pigeon!.unity
+    guid: 5ce01ac06f6f9524da73eb8e9c5e9752
   m_configObjects: {}
