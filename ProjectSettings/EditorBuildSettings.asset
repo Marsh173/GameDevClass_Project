@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Assignment_003.unity
-    guid: 73489df3dd90a204bbca885ee0c57368
+    path: Assets/Scenes/2D Treasure Hunt.unity
+    guid: 14951ae2c02123d4ca5a6503884272ce
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 3fb354ee2ad56b64183f900727d2cc6b
   m_configObjects: {}
