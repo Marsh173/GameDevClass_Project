@@ -39,7 +39,7 @@ public class colorChange : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             
-            gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
             pressE.gameObject.SetActive(true);
             pickUp = true;
         }

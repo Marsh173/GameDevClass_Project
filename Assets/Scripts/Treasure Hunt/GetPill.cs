@@ -9,12 +9,12 @@ public class GetPill : MonoBehaviour
     private TMP_Text EtoGet;
 
     bool pickUp;
-    CircleCollider2D circle;
+    CapsuleCollider2D cap;
 
     private void Awake()
     {
-        circle = GetComponent<CircleCollider2D>();
-        circle.isTrigger = true;  
+        cap = GetComponent<CapsuleCollider2D>();
+        cap.isTrigger = true;  
     }
 
     private void Start()

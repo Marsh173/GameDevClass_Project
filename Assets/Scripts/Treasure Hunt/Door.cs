@@ -15,6 +15,7 @@ public class Door : MonoBehaviour
     bool close_to_door;
 
     public GameObject the_actual_door;
+    public GameObject barn_floor;
 
 
     public static bool unlock = false;
@@ -28,6 +29,7 @@ public class Door : MonoBehaviour
     {
         locked.gameObject.SetActive(false);
         unlock_door.gameObject.SetActive(false);
+        barn_floor.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -73,7 +75,7 @@ public class Door : MonoBehaviour
     {
         Destroy(gameObject);
         Destroy(the_actual_door);
-
+        barn_floor.gameObject.SetActive(true);
         
     }
 

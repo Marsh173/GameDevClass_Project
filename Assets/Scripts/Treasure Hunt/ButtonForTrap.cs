@@ -7,7 +7,7 @@ public class ButtonForTrap : MonoBehaviour
 {
     [SerializeField] private TMP_Text pressE;
 
-    CapsuleCollider2D cap;
+    CircleCollider2D cap;
 
     public GameObject trap;
 
@@ -15,7 +15,7 @@ public class ButtonForTrap : MonoBehaviour
 
     private void Awake()
     {
-        cap = GetComponent<CapsuleCollider2D>();
+        cap = GetComponent<CircleCollider2D>();
         cap.isTrigger = true;
     }
 

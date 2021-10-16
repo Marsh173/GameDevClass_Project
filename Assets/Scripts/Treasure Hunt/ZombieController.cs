@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class ZombieController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    CapsuleCollider2D cap;
+    BoxCollider2D box;
 
     [SerializeField] private string End;
 
@@ -31,6 +33,8 @@ public class ZombieController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        cap = GetComponent<CapsuleCollider2D>();
+        box = GetComponent<BoxCollider2D>();
         pillCount.text = "Goal: Get Green Pills: " + count + "/5";
     }
 
@@ -103,6 +107,23 @@ public class ZombieController : MonoBehaviour
             canJump = true;
             anim.SetBool("isJumping", true);
         }
+
+        if (Input.GetKey(KeyCode.C))
+        {
+            canJump = false;
+            anim.SetBool("isCrouching", true);
+            box.enabled = true; //change collider
+            cap.enabled = false;
+
+            //change position 
+        }
+        else
+        {
+            anim.SetBool("isCrouching", false);
+            box.enabled = false;
+            cap.enabled = true;
+        }
+
 
 
         pillCount.text = "Goal: Get Green Pills: " + count + "/5";
