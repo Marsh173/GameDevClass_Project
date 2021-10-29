@@ -53,7 +53,7 @@ public class openBasement : MonoBehaviour
             else
             {
                 openDoor.gameObject.SetActive(true);
-                openDoor.text = "Crack it open!";
+                openDoor.text = "Break the door!";
                 close_to_door = true;
             }
         }

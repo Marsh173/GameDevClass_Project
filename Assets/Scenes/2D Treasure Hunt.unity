@@ -269,7 +269,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 200
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -277,7 +277,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &71489506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6397,7 +6397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7706205526912475977, guid: c770ec6dc4e834b4d8d43210174b4f10, type: 3}
       propertyPath: m_Mass
-      value: 15
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706205526912475977, guid: c770ec6dc4e834b4d8d43210174b4f10, type: 3}
+      propertyPath: m_Constraints
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7706205526912475977, guid: c770ec6dc4e834b4d8d43210174b4f10, type: 3}
       propertyPath: m_SleepingMode
@@ -6555,7 +6559,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 200
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -6563,7 +6567,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &607913100
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7099,7 +7103,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 200
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -7107,7 +7111,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!1 &802868397
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,6 +8140,14 @@ PrefabInstance:
     - target: {fileID: 7706205526912475976, guid: c770ec6dc4e834b4d8d43210174b4f10, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706205526912475977, guid: c770ec6dc4e834b4d8d43210174b4f10, type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706205526912475977, guid: c770ec6dc4e834b4d8d43210174b4f10, type: 3}
+      propertyPath: m_Constraints
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7706205526912475977, guid: c770ec6dc4e834b4d8d43210174b4f10, type: 3}
       propertyPath: m_SleepingMode
@@ -9513,7 +9525,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 1
@@ -10734,7 +10746,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7779292, y: 1}
+    m_SensorSize: {x: 1.7785844, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
